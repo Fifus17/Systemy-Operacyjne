@@ -22,7 +22,7 @@ int main(){
 // ar cr liblaby.a laby.o
 // musi miec przedrostek lib
 
-// kropka to e z tego folderu a l ze biblioteka
+// kropka to ze z tego folderu a l ze biblioteka
 // gcc -o main main.c -L. -llaby
 
 // jak zmienimy cokolwiek z bibliotece to musimy ja od nowa skompilowac i dolinkowac do pliku ktory z niej korzysta
