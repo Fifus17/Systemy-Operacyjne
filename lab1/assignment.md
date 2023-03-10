@@ -4,7 +4,7 @@
 ## Zadanie 1. Alokacja tablicy ze wskaźnikami na bloki pamięci zawierające znaki (25%)
 **Zaprojektuj i przygotuj zestaw funkcji (bibliotekę) do zarządzania tablicą bloków, w których zapisywane są rezultaty operacji zliczania lini, słów i znaków (poleceniem wc) w plikach przekazywanych jako odpowiedni parametr.**
 
-*Poniżej, jeżeli mowa o zliczaniu ilośći słów, chodzi o wykonanie programu wc w trybie domyślnym.*
+*Poniżej, jeżeli mowa o zliczaniu ilości słów, chodzi o wykonanie programu wc w trybie domyślnym.*
 
 **Interfejs biblioteki powinien obejmować 5 funkcji realizujących następujące zadania:**
 
