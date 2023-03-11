@@ -24,7 +24,7 @@ void getDLLnames(char* filePath) { // get pointers to functions
     *(void **) (&readFromFile) = dlsym(tmp,"readFromFile");
     *(void **) (&getFromStructure) = dlsym(tmp,"getFromStructure");
     *(void **) (&removeFromStructure) = dlsym(tmp,"removeFromStructure");
-    *(void **) (&clearFromStructure) = dlsym(tmp,"clearFromStructure");
+    *(void **) (&clearStructure) = dlsym(tmp,"clearStructure");
     }
 }
 
