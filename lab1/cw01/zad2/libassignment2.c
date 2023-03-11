@@ -12,7 +12,7 @@
 //     bool* used; // pointer to the array of bools that indicate if the string field is used
 // } structure;
 
-char* wc = ""; // string that stores the wc command, for now left empty
+char wc[1024] = ""; // string that stores the wc command, for now left empty
 
 // (1 task) Function that creates and returns a structure
 structure createStructure(size_t size) {
@@ -36,17 +36,16 @@ void initStructure(structure* structure, size_t size) {
 // (2 task) Function that runs wc on the file and saves the result in the structure. Returns true if the operation was successful, otherwise false.
 bool readFromFile(structure* structure, char* filePath) {
 
-    printf("Reading from file");
-
-    char tmpFilePath[] = "/tmp/XXXXXX"; // path to the temporary file
+    char tmpFilePath[] = "/tmp/libassingment2_XXXXXX"; // path to the temporary file
     int tmpFile = mkstemp(tmpFilePath); // create a temporary file, it must be created as an int
-    if(tmpFile == -1) { // if the file couldn't be created
+    if(tmpFile == 0) { // if the file couldn't be created
         fprintf(stderr, "Couldn't create a temporary file\n"); // print an error message
         return false;
     }
-    printf("Temporary file created");
 
-    snprintf(wc, 1024, "wc -l '%s' 1> '%s' 2>dev>null", filePath, tmpFilePath); // create the wc command
+    printf("tmpFilePath: %s\n", tmpFilePath);
+
+    snprintf(wc, 1024, "wc '%s' > '%s'", filePath, tmpFilePath); // create the wc command
     system(wc); // run the wc command
 
     FILE* tmpFileOpened = fopen(tmpFilePath, "r"); // open the temporary file
@@ -65,16 +64,16 @@ bool readFromFile(structure* structure, char* filePath) {
     fclose(tmpFileOpened); // close the temporary file
 
     if(strlen(content) == 0) { // if the file is empty
-        fprintf(stderr, "File is empty\n"); // print an error message
+        fprintf(stderr, "Failed to read input file (%s)\n", filePath); // print an error message
         free(content); // free the memory
         return false;
     }
 
     // saving data in the structure
-    if(structure->currentSize != structure->size) { // if the structure is full
+    if(structure->currentSize < structure->size) { // if the structure is full
         structure->data[structure->currentSize] = content; // save the content of the file in the structure
         structure->used[structure->currentSize] = true; // set the field to true, since it's used
-        structure->currentSize++; // increase the current size of the structure
+        (structure->currentSize)++; // increase the current size of the structure
     }
     else { // if the structure is full
         fprintf(stderr, "Structure is full\n"); // print an error message

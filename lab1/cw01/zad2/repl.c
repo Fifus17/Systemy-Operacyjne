@@ -57,6 +57,7 @@ bool getCommand(char* command, size_t length) {
     }
     if (regexec(&regexCOUNT, command, 0, NULL, 0) == 0) {
         cmdID = 1;
+        command += strlen("count "); // moving the pointer to the path, passing "count "
         size_t pathLength = strcspn(command, "\n"); // get the end of the path
         strncpy(cmdFilePath, command, pathLength); // get the path to the file from the command
         return true;
@@ -127,12 +128,14 @@ void executeCommand() {
             structureInitialised = false;
             break;
         case 5:
+            printf("List of commands:\n");
             printf("init 'your input' - initialises the structure with the given size\n");
             printf("count 'file path' - counts the number of words in the given file\n");
             printf("show 'your input' - shows the word with the given index\n");
             printf("delete 'your input' - deletes the word with the given index\n");
             printf("destroy - destroys the structure\n");
             printf("exit - exits the program\n");
+            printf("------------------------------------------------------------------\n");
             break;
         case 6:
             if(structureInitialised) {
