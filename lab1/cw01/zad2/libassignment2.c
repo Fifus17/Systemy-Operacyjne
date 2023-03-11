@@ -43,8 +43,6 @@ bool readFromFile(structure* structure, char* filePath) {
         return false;
     }
 
-    printf("tmpFilePath: %s\n", tmpFilePath);
-
     snprintf(wc, 1024, "wc '%s' > '%s'", filePath, tmpFilePath); // create the wc command
     system(wc); // run the wc command
 
@@ -68,6 +66,8 @@ bool readFromFile(structure* structure, char* filePath) {
         free(content); // free the memory
         return false;
     }
+
+    printf("wc: %s", content);
 
     // saving data in the structure
     if(structure->currentSize < structure->size) { // if the structure is full
