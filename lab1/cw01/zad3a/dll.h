@@ -19,6 +19,6 @@ void getDLLnames(char* filePath) { // get pointers to functions
 }
 
 #else
-void getDLLnames(char* filePath) {} // empty function for static and shared libraries
+void getDLLnames(char* filePath) {}
 #endif
 #endif
