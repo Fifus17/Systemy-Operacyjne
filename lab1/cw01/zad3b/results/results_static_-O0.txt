@@ -1,0 +1,153 @@
+>>> -------------------------
+Command execution times:
+Real time: 2000
+User time: 0
+System time: 0
+-------------------------
+>>> wc:      195     769    7035 repl.c
+ÿÿÿÿ-------------------------
+Command execution times:
+Real time: 10775000
+User time: 0
+System time: 0
+-------------------------
+>>> wc:       59     139    1298 makefile
+-------------------------
+Command execution times:
+Real time: 7927000
+User time: 0
+System time: 0
+-------------------------
+>>> wc:      122     761    5462 libassignment2.c
+-------------------------
+Command execution times:
+Real time: 9682000
+User time: 0
+System time: 0
+-------------------------
+>>> wc:       27      52     575 libassignment2.h
+-------------------------
+Command execution times:
+Real time: 7733000
+User time: 0
+System time: 0
+-------------------------
+>>> wc:       27      52     593 libassignment2_so.h
+-------------------------
+Command execution times:
+Real time: 10300000
+User time: 0
+System time: 0
+-------------------------
+>>> wc:       23      67     682 dll.h
+-------------------------
+Command execution times:
+Real time: 8524000
+User time: 0
+System time: 0
+-------------------------
+>>> wc:       23      46     253 tests.txt
+-------------------------
+Command execution times:
+Real time: 9342000
+User time: 0
+System time: 0
+-------------------------
+>>>      195     769    7035 repl.c
+ÿÿÿÿ-------------------------
+Command execution times:
+Real time: 3000
+User time: 0
+System time: 0
+-------------------------
+>>>       59     139    1298 makefile
+-------------------------
+Command execution times:
+Real time: 1000
+User time: 0
+System time: 0
+-------------------------
+>>>      122     761    5462 libassignment2.c
+-------------------------
+Command execution times:
+Real time: 1000
+User time: 0
+System time: 0
+-------------------------
+>>>       27      52     575 libassignment2.h
+-------------------------
+Command execution times:
+Real time: 1000
+User time: 0
+System time: 0
+-------------------------
+>>>       27      52     593 libassignment2_so.h
+-------------------------
+Command execution times:
+Real time: 1000
+User time: 0
+System time: 0
+-------------------------
+>>>       23      67     682 dll.h
+-------------------------
+Command execution times:
+Real time: 1000
+User time: 0
+System time: 0
+-------------------------
+>>>       23      46     253 tests.txt
+-------------------------
+Command execution times:
+Real time: 0
+User time: 0
+System time: 0
+-------------------------
+>>> -------------------------
+Command execution times:
+Real time: 0
+User time: 0
+System time: 0
+-------------------------
+>>> -------------------------
+Command execution times:
+Real time: 1000
+User time: 0
+System time: 0
+-------------------------
+>>> -------------------------
+Command execution times:
+Real time: 1000
+User time: 0
+System time: 0
+-------------------------
+>>> -------------------------
+Command execution times:
+Real time: 1000
+User time: 0
+System time: 0
+-------------------------
+>>> -------------------------
+Command execution times:
+Real time: 1000
+User time: 0
+System time: 0
+-------------------------
+>>> -------------------------
+Command execution times:
+Real time: 1000
+User time: 0
+System time: 0
+-------------------------
+>>> -------------------------
+Command execution times:
+Real time: 1000
+User time: 0
+System time: 0
+-------------------------
+>>> -------------------------
+Command execution times:
+Real time: 0
+User time: 0
+System time: 0
+-------------------------
+>>> 

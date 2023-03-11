@@ -1,0 +1,24 @@
+init 7
+count repl.c
+count makefile
+count libassignment2.c
+count libassignment2.h
+count libassignment2_so.h
+count dll.h
+count tests.txt
+get 0 
+get 1
+get 2
+get 3
+get 4
+get 5
+get 6
+delete 6
+delete 5
+delete 4
+delete 3
+delete 2
+delete 1
+delete 0
+destroy
+exit
