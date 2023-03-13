@@ -73,5 +73,5 @@ Utwórz wpisy w *Makefile* uruchamiający testy z pkt. a w trzech wariantach pro
 Wyniki pomiarów zbierz w plikach results_[suffix].txt (gdzie suffix to: static, shared, dynamic). 
 Otrzymane wyniki krótko skomentuj. Wygenerowane pliki z raportami załącz jako element rozwiązania w pliku *report.txt*.
 
-**B)** (25%) Rozszerz plik *Makefile* z punktu 3A dodając możliwość skompilowania programu na trzech różnych poziomach optymalizacji — -O0…-Os. Przeprowadź ponownie pomiary, kompilując i uruchamiając program dla różnych poziomów optymalizacji. Wyniki pomiarów dodaj do pliku results_[suffix1]_[suffix2].txt. 
+**B)** (25%) Rozszerz plik **Makefile** z punktu 3A dodając możliwość skompilowania programu na trzech różnych poziomach optymalizacji — -O0…-Os. Przeprowadź ponownie pomiary, kompilując i uruchamiając program dla różnych poziomów optymalizacji. Wyniki pomiarów dodaj do pliku results_[suffix1]_[suffix2].txt. 
 Otrzymane wyniki krótko skomentuj. Wygenerowane pliki z raportami załącz jako element rozwiązania w pliku *report.txt*.

@@ -1,0 +1,11 @@
+Zadania zrobione na 100%
+
+Kod pomiędzy zadaniami się rozni - odzwierciedla kolejne etapy rozwiazywania cwiczenia.
+Kod rozwiazujacy wszystkie zadania znajduje się w katalogu zad3b
+
+Rezultaty pomiarow w zadaniach 3a i 3b znajduja sie w ich odpowiednich katalogach w folderach results.
+
+Wnioski:
+Najszybciej dziala biblioteka statyczna.
+Biblioteki shared oraz dll podobnie do siebie, jednak zauwazalnie wolniej od statycznej.
+Optymalizacja ma wplyw na dlugosc wykonywania polecen, jednak przy tak krotkich poleceniach, ich wplyw nie jest znaczaco zauwazalny. Najszybciej kod dziala dla flagi -O3.
