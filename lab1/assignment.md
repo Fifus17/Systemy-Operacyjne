@@ -11,15 +11,21 @@
 <ol>
 <li>Utworzenie i zwrócenie struktury zawierającej: </li>
 <ul>
-<li>Zainicializowaną zerami (calloc()) tablicę wskaźników w której będą przechowywane wskaźniki na bloki pamięci. </li>
+<li>
+
+Zainicializowaną zerami **(calloc())** tablicę wskaźników w której będą przechowywane wskaźniki na bloki pamięci. </li>
 <li>Rozmiar tablicy, tj. maksymalna ilość bloków jakie można zapisać.</li>
 <li>Aktualny rozmiar, tj. ilość zapisanych bloków.</li>
 </ul>
 <li>Przeprowadzenie procedury zliczania ilości linii i słów dla podanego pliku:</li>
 <ul>
 <li>Procedura przyjmuje strukturę z pkt.1 oraz nazwę pliku.</li>
-<li>Uruchomienie (system()) programu wc do zliczenia lini, słów i znaków dla zadanego pliku i przesłanie wyniku do pliku tymczasowego w katalogu /tmp. </li>
-<li>Zarezerwowanie bloku pamięci (calloc()) o rozmiarze odpowiadającym rzeczywistemu rozmiarowi danych znajdujących się w buforze tymczasowym i przeniesienie tych danych do nowo zaalokowanego bloku pamięci.</li>
+<li>
+
+Uruchomienie **(system())** programu wc do zliczenia lini, słów i znaków dla zadanego pliku i przesłanie wyniku do pliku tymczasowego w katalogu /tmp. </li>
+<li>
+
+Zarezerwowanie bloku pamięci **(calloc())** o rozmiarze odpowiadającym rzeczywistemu rozmiarowi danych znajdujących się w buforze tymczasowym i przeniesienie tych danych do nowo zaalokowanego bloku pamięci.</li>
 <li>Inkrementację licznika ilości zapisanych bloków.</li>
 <li>Usunięcie pliku tymczasowego.</li>
 </ul>
@@ -33,7 +39,7 @@ Przygotuj plik *Makefile*, zawierający polecenia kompilujące pliki źródłowe
 ## Zadanie 2. Program korzystający z biblioteki (25%)
 **Napisz program testujący działanie funkcji z biblioteki z zadania 1.**
 
-Program powinien udostępniać interfejs typu REPL, tj. zczytywać komendy użytkownika ze standardowego wejścia linia po linii (fgets()).
+Program powinien udostępniać interfejs typu REPL, tj. zczytywać komendy użytkownika ze standardowego wejścia linia po linii **(fgets())**.
 
 **Program powinien udostępniać następujące komendy:**
 
@@ -70,6 +76,7 @@ Utwórz wpisy w *Makefile* uruchamiający testy z pkt. a w trzech wariantach pro
 <li>Z wykorzystaniem bilbioteki dzielonej (dynamiczne ładowanie podczas uruchamiania programu)</li>
 <li>Z wykorzystaniem biblioteki ładowanej dynamicznie (dlopen())</li>
 </ol>
+
 Wyniki pomiarów zbierz w plikach results_[suffix].txt (gdzie suffix to: static, shared, dynamic). 
 Otrzymane wyniki krótko skomentuj. Wygenerowane pliki z raportami załącz jako element rozwiązania w pliku *report.txt*.
 
