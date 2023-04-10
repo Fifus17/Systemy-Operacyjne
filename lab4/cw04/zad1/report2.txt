@@ -1,0 +1,4 @@
+IGNORE - w obu przypadkach sygnal jest ignorowany w obydwu procesach
+HANDLER - wywoluje sie w obydwu procesach
+MASK - w obu przypadkach dziala w obydwu procesach
+PENDING - przy forku sygnal jest widoczny tylko w rodzicu, przy execu zarowno w rodzicu jak i dziecku

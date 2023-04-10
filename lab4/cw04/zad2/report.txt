@@ -1,0 +1,5 @@
+Raising new signal in handler, because depth = 0 < 5
+Raising new signal in handler, because depth = 1 < 5
+Raising new signal in handler, because depth = 2 < 5
+Raising new signal in handler, because depth = 3 < 5
+Raising new signal in handler, because depth = 4 < 5
