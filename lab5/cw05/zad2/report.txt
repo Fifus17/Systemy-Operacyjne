@@ -1,0 +1,39 @@
+Interval: 0.000000001
+Number of processes: 1
+Time: 4.692465s
+
+Interval: 0.000000001
+Number of processes: 2
+Time: 2.441319s
+
+Interval: 0.000000001
+Number of processes: 5
+Time: 1.238986s
+
+Interval: 0.000000001
+Number of processes: 10
+Time: 1.086105s
+
+Interval: 0.000000001
+Number of processes: 100
+Time: 1.079444s
+
+Interval: 0.0000000001
+Number of processes: 1
+Time: 46.531654s
+
+Interval: 0.0000000001
+Number of processes: 2
+Time: 23.839328s
+
+Interval: 0.0000000001
+Number of processes: 5
+Time: 12.186722s
+
+Interval: 0.0000000001
+Number of processes: 10
+Time: 9.796914s
+
+Interval: 0.0000000001
+Number of processes: 100
+Time: 9.889388s

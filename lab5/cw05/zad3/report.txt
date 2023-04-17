@@ -1,0 +1,19 @@
+Interval: 0.000000001
+Number of programs: 1
+Time: 4.689575s
+
+Interval: 0.000000001
+Number of programs: 2
+Time: 2.404912s
+
+Interval: 0.000000001
+Number of programs: 5
+Time: 1.149457s
+
+Interval: 0.000000001
+Number of programs: 10
+Time: 0.946104s
+
+Interval: 0.000000001
+Number of programs: 5
+Time: 1.149457s
