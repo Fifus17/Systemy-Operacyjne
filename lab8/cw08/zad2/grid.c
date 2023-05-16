@@ -146,9 +146,9 @@ bool is_alive(int row, int col, char *grid)
     }
 }
 
-void update_grid(char *src, char *dst)
+void update_grid(char *src, char *dst, int no_threads)
 {
-    for (int i = 0; i < grid_width * grid_height; i++) {
+    for (int i = 0; i < no_threads; i++) {
         pthread_kill(threads[i], SIGUSR1);
     }
 }

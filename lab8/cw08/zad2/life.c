@@ -12,21 +12,22 @@ int main()
 	srand(time(NULL));
 	setlocale(LC_CTYPE, "");
 	initscr(); // Start curses mode
+	int no_threads = 300;
 
 	char *foreground = create_grid();
 	char *background = create_grid();
 	char *tmp;
 
 	init_grid(foreground);
-	init_threads(foreground, background, 10);
+	init_threads(foreground, background, no_threads);
 
 	while (true)
 	{
 		draw_grid(foreground);
-		usleep(500 * 1000);
 
 		// Step simulation
-		update_grid(foreground, background);
+		update_grid(foreground, background, no_threads);
+		usleep(500 * 1000);
 		tmp = foreground;
 		foreground = background;
 		background = tmp;
